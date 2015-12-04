@@ -6,3 +6,6 @@ exports.config =
       'app.js': /^app\//
     stylesheets:
       joinTo: 'app.css'
+  plugins:
+    stylus:
+      plugins: ['rupture']

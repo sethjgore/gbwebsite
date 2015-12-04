@@ -4,10 +4,22 @@
 @import '_splash.styl'
 @import '_front.styl'
 
+.font-light{
+  font-family:'ITC Blair W01 Light';
+}
+
+.font-medium{
+  font-family:'ITC Blair W01 Medium';
+}
+
+.font-bold{
+  font-family:'ITC Blair W01 Bold';
+}
+
 body{
-  font-family: 'BlairITCStd';
+  @extend .font-medium
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'BlairITCStd';
+  @extend .font-medium
 }

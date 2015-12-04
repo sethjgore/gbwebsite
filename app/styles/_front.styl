@@ -1,15 +1,35 @@
+$mobile = 500px
+
 .fr_logo-box
-  height: 10vh;
+  padding:3vh 5vw;
 
 .fr_logo-image
   height: 100%
 
+.fr_date
+  color: hsla(0, 0%, 0%, 0.23)
+  font-size: 2vmin
+  padding-top: 1vmin
+
 .fr_tagline-box
-  font-size: 4vmin
 
 .fr_tagline-text
+  font-size: 4vmin
   margin: 0
+  color: hsla(0, 0%, 0%, 0.23)
+  +below($mobile)
+    padding-top: 4vh
 
 .fr_filler-box
-  height: 80vh
+  height: 70vh
+  min-height: 70vh
   //background: url('teaser_light.jpg') no-repeat center center; background-size: cover;
+
+.fr_background
+  +below($mobile)
+    background-position: 36% center !important;
+    background-size: 261% !important;
+
+.fr_sm-box
+  display: none
+
