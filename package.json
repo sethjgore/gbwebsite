@@ -1,0 +1,27 @@
+{
+  "name": "your-app",
+  "description": "Description",
+  "author": "Your Name",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "start": "brunch watch --server"
+  },
+  "dependencies": {
+    "javascript-brunch": ">= 1.0 < 1.9",
+    "css-brunch": ">= 1.0 < 1.9",
+    "uglify-js-brunch": ">= 1.0 < 1.9",
+    "clean-css-brunch": ">= 1.0 < 1.9",
+    "auto-reload-brunch": ">= 1.0 < 1.9",
+    "basscss": "^7.0.4"
+  },
+  "devDependencies": {
+    "stylus-brunch": "^1.8.1",
+    "postcss-brunch": "^0.5.0",
+    "autoprefixer": "^6.1.2",
+    "normalize.css": "^3.0.3"
+  }
+}
