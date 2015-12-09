@@ -2,12 +2,20 @@
   height: 100vh
   & *
     transition: .2s all ease-in-out
-.signup_splash-text
-  margin: 2rem
+  justify-content: center
+  -webkit-justify-content: center
 
+.signup_splash-text
+  margin: 3vmin
+  font-size: 4vw
+  +below(500px)
+    font-size: 1.5rem
+  color: #C0C0C0
+  span
+    color: hsla(0,0,0,.3);
 .signup_splash-back
   color: gray
-  padding-top: 2rem
+  padding-top: .3vmin
   &:hover
     gray
 
@@ -15,11 +23,18 @@
   align-self: center
 
 .signup_splash-form input
-  border-radius: .2rem
-  margin: .4rem
-  outline: none
-  border: 1px gray solid
-
+    border-radius: 0.8vmin;
+    margin: 1.2vmin;
+    outline: none;
+    border: 1px hsl(0, 0%, 85%) solid;
+    font-family: 'ITC Blair W01 Light';
+    font-size: 3vmin;
+    padding: 3.3vmin 1.3vmin;
+    background: hsl(0, 0%, 93%);
+    +below(500px)
+      font-size: 1rem
+      margin: .5rem
+      padding: .7rem .4rem
 .signup_splash-form button
   margin: .4rem
   background: red
@@ -30,3 +45,150 @@
 
   &:hover
     color: hsla(0,0,0,.7);
+
+.more-chevron
+  height: 2rem
+  position: relative
+
+
+.more-chevron:after
+  content: '^';
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: translateY(1rem) rotate(180deg) scale(1.8, 0.6);
+  font-size: 4rem;
+  color: hsl(358, 85%, 52%);
+  display: block;
+  pointer-events: none;
+  text-align: center;
+  height: 3rem
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 1.8rem;
+  transition: all ease-in-out
+  position: absolute
+  top: 0
+
+.nug-remind{
+  animation: nug-remind ease-in-out 2s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+  -webkit-animation: nug-remind ease-in-out 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-transform-origin: 50% 50%;
+  -moz-animation: nug-remind ease-in-out 2s;
+  -moz-animation-iteration-count: infinite;
+  -moz-transform-origin: 50% 50%;
+  -o-animation: nug-remind ease-in-out 2s;
+  -o-animation-iteration-count: infinite;
+  -o-transform-origin: 50% 50%;
+  -ms-animation: nug-remind ease-in-out 2s;
+  -ms-animation-iteration-count: infinite;
+  -ms-transform-origin: 50% 50%;
+}
+
+@keyframes nug-remind{
+  0% {
+    transform:  translate(0px,0px)  ;
+  }
+  5% {
+    transform:  translate(0px,29px)  ;
+  }
+  9% {
+    transform:  translate(0px,10px)  ;
+  }
+  14% {
+    transform:  translate(0px,32px)  ;
+  }
+  19% {
+    transform:  translate(0px,0px)  ;
+  }
+  100% {
+    transform:  translate(0px,0px)  ;
+  }
+}
+
+@-moz-keyframes nug-remind{
+  0% {
+    -moz-transform:  translate(0px,0px)  ;
+  }
+  5% {
+    -moz-transform:  translate(0px,29px)  ;
+  }
+  9% {
+    -moz-transform:  translate(0px,10px)  ;
+  }
+  14% {
+    -moz-transform:  translate(0px,32px)  ;
+  }
+  19% {
+    -moz-transform:  translate(0px,0px)  ;
+  }
+  100% {
+    -moz-transform:  translate(0px,0px)  ;
+  }
+}
+
+@-webkit-keyframes nug-remind {
+  0% {
+    -webkit-transform:  translate(0px,0px)  ;
+  }
+  5% {
+    -webkit-transform:  translate(0px,29px)  ;
+  }
+  9% {
+    -webkit-transform:  translate(0px,10px)  ;
+  }
+  14% {
+    -webkit-transform:  translate(0px,32px)  ;
+  }
+  19% {
+    -webkit-transform:  translate(0px,0px)  ;
+  }
+  100% {
+    -webkit-transform:  translate(0px,0px)  ;
+  }
+}
+
+@-o-keyframes nug-remind {
+  0% {
+    -o-transform:  translate(0px,0px)  ;
+  }
+  5% {
+    -o-transform:  translate(0px,29px)  ;
+  }
+  9% {
+    -o-transform:  translate(0px,10px)  ;
+  }
+  14% {
+    -o-transform:  translate(0px,32px)  ;
+  }
+  19% {
+    -o-transform:  translate(0px,0px)  ;
+  }
+  100% {
+    -o-transform:  translate(0px,0px)  ;
+  }
+}
+
+@-ms-keyframes nug-remind {
+  0% {
+    -ms-transform:  translate(0px,0px)  ;
+  }
+  5% {
+    -ms-transform:  translate(0px,29px)  ;
+  }
+  9% {
+    -ms-transform:  translate(0px,10px)  ;
+  }
+  14% {
+    -ms-transform:  translate(0px,32px)  ;
+  }
+  19% {
+    -ms-transform:  translate(0px,0px)  ;
+  }
+  100% {
+    -ms-transform:  translate(0px,0px)  ;
+  }
+}
