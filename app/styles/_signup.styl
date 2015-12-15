@@ -8,11 +8,13 @@
 .signup_splash-text
   margin: 3vmin
   font-size: 4vw
-  +below(500px)
-    font-size: 1.5rem
   color: #C0C0C0
   span
     color: hsla(0,0,0,.3);
+
+  +below(500px)
+    font-size: 1.5rem
+
 .signup_splash-back
   color: gray
   padding-top: .3vmin
@@ -24,7 +26,7 @@
 
 .signup_splash-form input
     border-radius: 0.8vmin;
-    margin: 1.2vmin;
+    margin: 1.2vmin 0;
     outline: none;
     border: 1px hsl(0, 0%, 85%) solid;
     font-family: 'ITC Blair W01 Light';
@@ -35,13 +37,17 @@
       font-size: 1rem
       margin: .5rem
       padding: .7rem .4rem
+
 .signup_splash-form button
-  margin: .4rem
+  margin: .4vmin 0
   background: red
   border: none
   color: white
-  border-radius: .2rem
-  padding: .4rem 1rem
+  border-radius: .2vmin
+  padding: .8vmin 1vmin
+  font-size: 3vmin;
+  display: inline-block
+  flex: 0
 
   &:hover
     color: hsla(0,0,0,.7);
