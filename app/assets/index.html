@@ -22,15 +22,15 @@
         <div class="flex-auto flex flex-center slideshow_boxes">
             <div class="slideshow_box" style="background: url('poses/nyle2.jpg') no-repeat center bottom, #fff; background-size:contain;">
             </div>
-            <div class="slideshow_box" style="background: url('poses/delaine2.jpg') no-repeat center bottom, #fff; background-size:contain;">
+            <div class="slideshow_box" style="background: url('poses/delaine2.jpg') no-repeat center bottom, #fff; background-size:contain; display: none;">
             </div>
-            <div class="slideshow_box" style="background: url('poses/justin2.jpg') no-repeat center bottom, #fff; background-size:contain;">
+            <div class="slideshow_box" style="background: url('poses/justin2.jpg') no-repeat center bottom, #fff; background-size:contain; display: none;">
             </div>
-            <div class="slideshow_box" style="background: url('poses/dustin2.jpg') no-repeat center bottom, #fff; background-size:contain;">
+            <div class="slideshow_box" style="background: url('poses/dustin2.jpg') no-repeat center bottom, #fff; background-size:contain; display: none;">
             </div>
-            <div class="slideshow_box" style="background: url('poses/man2.jpg') no-repeat center bottom, #fff; background-size:contain;">
+            <div class="slideshow_box" style="background: url('poses/man2.jpg') no-repeat center bottom, #fff; background-size:contain; display: none;">
             </div>
-            <div class="slideshow_box" style="background: url('poses/mame3.jpg') no-repeat center bottom, #fff; background-size:contain;">
+            <div class="slideshow_box" style="background: url('poses/mame3.jpg') no-repeat center bottom, #fff; background-size:contain; display: none;">
             </div>
             <!-- <div class="fr_tagline-text">something different</div>
             <form class="slideshow_box flex flex-column signup_splash-form" name="contact" action="index" method="post">
@@ -67,7 +67,6 @@
     var $ = jQuery;
 
     $(function() {
-        $('.slideshow_boxes .slideshow_box:gt(0)').hide();
         setInterval(function() {
                 $('.slideshow_boxes > :first-child').fadeOut("slow")
                     .next('.slideshow_box').fadeIn()
@@ -85,8 +84,8 @@
 
     //listener endSlideshow --> show when signup or lpreached
     //
-
     </script>
+    <script type="text/javascript" src="libraries.js"></script>
     <script>
     (function(i, s, o, g, r, a, m) {
         i['GoogleAnalyticsObject'] = r;
