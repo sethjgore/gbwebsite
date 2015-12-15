@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content=" initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>GripBell</title>
+    <link rel="stylesheet" type="text/css" href="app.css">
+    <meta property="og:title" content="Sign up for something different. With Nyle DiMarco." />
+    <meta property="og:image" content="http://www.gripbell.com/teaser_fb.png" />
+    <meta property="og:description" content="Coming 01.02.16 #GripBell #ANTM #NyleDiMarco" />
+    <meta property="og:url" content="http://www.gripbell.com" />
+</head>
+
+<body class="frontBodyAnimation">
+    <div class="slideshow_container flex-column splash">
+        <div class="slideshow_logo-box flex flex-center">
+            <object type="image/svg+xml" data="logo/visual.svg" class="slideshow_logo">
+            </object>
+        </div>
+        <div class="flex-auto flex flex-center slideshow_boxes">
+            <div class="slideshow_box" style="background: url('poses/nyle2.jpg') no-repeat center bottom, #fff; background-size:contain;">
+            </div>
+            <div class="slideshow_box" style="background: url('poses/delaine2.jpg') no-repeat center bottom, #fff; background-size:contain;">
+            </div>
+            <div class="slideshow_box" style="background: url('poses/justin2.jpg') no-repeat center bottom, #fff; background-size:contain;">
+            </div>
+            <div class="slideshow_box" style="background: url('poses/dustin2.jpg') no-repeat center bottom, #fff; background-size:contain;">
+            </div>
+            <div class="slideshow_box" style="background: url('poses/man2.jpg') no-repeat center bottom, #fff; background-size:contain;">
+            </div>
+            <div class="slideshow_box" style="background: url('poses/mame3.jpg') no-repeat center bottom, #fff; background-size:contain;">
+            </div>
+            <!-- <div class="fr_tagline-text">something different</div>
+            <form class="slideshow_box flex flex-column signup_splash-form" name="contact" action="index" method="post">
+                <input type="hidden" name="form-name" value="contact">
+                <input placeholder="Your Name" type="text" name="name">
+                <input placeholder="Your Email" type="email" name="email">
+                <button>Sign Up Now</button>
+            </form> -->
+        </div>
+    </div>
+    <div class="share_fav-box">
+        <div class="center share_fav-text">pick your favorite</div>
+        <div class="share_buttons-box flex flex-center flex-wrap">
+            <div class="share_buttons"><img class="share_button" src="buttons/button-nyle.png"></img>
+            <img class="share_button" src="buttons/button-delaine.png"></img>
+            <img class="share_button" src="buttons/button-justin.png"></img>
+            </div>
+            <div class="share_buttons">
+            <img class="share_button" src="buttons/button-man.png"></img>
+            <img class="share_button" src="buttons/button-dustin.png"></img>
+            <img class="share_button" src="buttons/button-mame.png"></img>
+            </div>
+        </div>
+        <div class="flex flex-wrap layout share_to-box">
+            <div>facebook</div>
+            <div>just vote</div>
+            <div>twitter</div>
+        </div>
+    </div>
+    <!-- <div class="flex splash flex-column fr_background">
+        <div class="center flex-auto flex flex-center fr_tagline-box">
+            <h1 class="fr_tagline-text flex-auto">something different</h1></div>
+         <div class="flex flex-column signup_splash flex-center" background="assets/campaign/">
+            <div class="center signup_splash-text">sign up for
+                <br>something different</div>
+
+            <form class="flex flex-column signup_splash-form" name="contact" action="index" method="post">
+                <input type="hidden" name="form-name" value="contact">
+                <input placeholder="Your Name" type="text" name="name">
+                <input placeholder="Your Email" type="email" name="email">
+                <button>Sign Up Now</button>
+            </form>
+            <div class="fr_sm-box flex flex-center center">
+                <a href="http://facebook.com/gripbell" class="sm-icon facebook"></a>
+                <a href="http://twitter.com/gripbell" class="sm-icon twitter"></a>
+                <a href="http://instagram.com/gripbell" class="sm-icon instagram"></a>
+            </div>
+        </div>
+    </div> -->
+    <script type="text/javascript" src="http://fast.fonts.net/jsapi/cc3b848b-7e30-4728-8f02-ea9b75c6cbd1.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript">
+    var $ = jQuery;
+
+    $(function() {
+        $('.slideshow_boxes .slideshow_box:gt(0)').hide();
+        setInterval(function() {
+                $('.slideshow_boxes > :first-child').fadeOut("slow")
+                    .next('.slideshow_box').fadeIn()
+                    .end().appendTo('.slideshow_boxes');
+            },
+            3500);
+    });
+
+
+    //TODO
+    //
+    //function endSlideshow--> when last photo is reached, emit event
+
+    //listener endSlideshow --> show sign up when lpreached
+
+    //listener endSlideshow --> show when signup or lpreached
+    //
+
+    </script>
+    <script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-70998402-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+    <script type="text/javascript">
+    </script>
+</body>
+
+</html>
