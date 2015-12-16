@@ -30,6 +30,9 @@
   justify-content: center
   -webkit-justify-content: center
 
+.slideshow_model-box.modified
+  +below(625px)
+    opacity: 0
 
 .slideshow_model-box
   display: block
@@ -55,6 +58,39 @@
     text-align: center
     left: 0
 
+.slideshow_signup-box
+  position: absolute
+  top: 0
+  width: 100%
+
+.slideshow_signup-box .invisible
+  transition: .3s all ease-in-out;
+  opacity: 0
+  &.visible
+    opacity: 1
+
+a.slideshow_signup-button
+  transition: .1s all ease-in-out;
+  position: absolute
+  right: 2vmin
+  top:2vmin
+  font-size: 3vmin;
+  padding: .5vmin 1vmin
+  color: white;
+  display: inline-block
+  text-align: right
+  background: hsl(358, 98%, 40%);
+  border-radius: 1vmin
+  float: right
+  text-decoration: none
+
+  +above(625px)
+   font-size: 2vmin
+   text-align: right
+  &:hover
+    transform: scale(1.2)
+    background: hsl(358, 98%, 35%);
+    text-decoration: none
 
 .slideshow_model-place
   position: absolute
@@ -68,3 +104,24 @@
     text-align: center
     left: 0
 
+.slideshow_sm-box
+  position: absolute
+  left: 0
+  top: 1vmin
+  padding: 2vmin 0 0 0vmin
+  justify-content: flex-start;
+  -webkit-justify-content: flex-start;
+
+.follow_box
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+.follow_youarein
+  position: relative
+  z-index: 89
+  font-size: 5vmin
+  text-shadow: 0 0 .5rem #fff
+  +below(500px)
+    font-size: 7vmin

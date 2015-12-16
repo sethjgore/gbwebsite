@@ -21,37 +21,37 @@
         </div>
         <div class="flex-auto flex flex-center slideshow_boxes">
             <div data-name="nyle" class="slideshow_box" style="background: url('poses/nyle2.jpg') no-repeat center bottom, #fff; background-size:contain;">
-                <div class="slideshow_model-box">
+                <div class="slideshow_model-box modified">
                     <div class="slideshow_model-name">Nyle DiMarco</div>
                     <div class="slideshow_model-place">The America's Next Top Model Winner</div>
                 </div>
             </div>
             <div data-name="mame" class="slideshow_box" style="background: url('poses/mame3.jpg') no-repeat center bottom, #fff; background-size:contain; display: none;">
-                <div class="slideshow_model-box">
+                <div class="slideshow_model-box modified">
                     <div class="slideshow_model-name">Mame Adjei</div>
                     <div class="slideshow_model-place">ANTM First Runner Up</div>
                 </div>
             </div>
             <div data-name="dustin" class="slideshow_box" style="background: url('poses/dustin2.jpg') no-repeat center bottom, #fff; background-size:contain; display: none;">
-                <div class="slideshow_model-box">
+                <div class="slideshow_model-box modified">
                     <div class="slideshow_model-name">Dustin McNeer</div>
                     <div class="slideshow_model-place">ANTM Contestant</div>
                 </div>
             </div>
             <div data-name="justin" class="slideshow_box" style="background: url('poses/justin2.jpg') no-repeat center bottom, #fff; background-size:contain; display: none;">
-                <div class="slideshow_model-box visible">
+                <div class="slideshow_model-box modified visible">
                     <div class="slideshow_model-name">Justin Kim</div>
                     <div class="slideshow_model-place">ANTM Contestant</div>
                 </div>
             </div>
             <div data-name="stefano" class="slideshow_box" style="background: url('poses/man2.jpg') no-repeat center bottom, #fff; background-size:contain; display: none;">
-                <div class="slideshow_model-box">
+                <div class="slideshow_model-box modified">
                     <div class="slideshow_model-name">Stefano Churchill</div>
                     <div class="slideshow_model-place">ANTM Contestant</div>
                 </div>
             </div>
             <div data-name="delanie" class="slideshow_box" style="background: url('poses/delaine3.jpg') no-repeat center bottom, #fff; background-size:contain; display: none;">
-                <div class="slideshow_model-box">
+                <div class="slideshow_model-box modified">
                     <div class="slideshow_model-name">Delanie Dischert</div>
                     <div class="slideshow_model-place">ANTM Contestant</div>
                 </div>
@@ -67,8 +67,11 @@
             </form>
         </div> -->
     </div>
+    <div class="follow_box splash flex flex-center">
+           <div class="flex-auto center flex-column flex-center"><div class="follow_youarein">you're in! <br>we'll be in touch.</div></div>
+    </div>
     <div class="share_fav-box">
-        <div class="share_fav-container">
+        <div class="share_fav-container visible">
             <div class="center share_fav-text">follow these models</div>
             <div class="share_buttons-box flex flex-center flex-wrap">
                 <a target="_blank" href="https://www.facebook.com/NyleDiMarco/">
@@ -92,8 +95,7 @@
         </div>
     </div>
     <div class="slideshow_signup-box">
-        <div class="center slideshow_signup invisible"><a href="/getin.html"class="slideshow_signup-button">get in</a></div>
-        <div class="slideshow_sm-box flex flex-center center invisible">
+        <div class="slideshow_sm-box visible flex flex-center center invisible">
             <a href="http://facebook.com/gripbell" class="sm-icon facebook"></a>
             <a href="http://twitter.com/gripbell" class="sm-icon twitter"></a>
             <a href="http://instagram.com/gripbell" class="sm-icon instagram"></a>
@@ -126,27 +128,14 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script type="text/javascript">
     var $ = jQuery;
-    var counter = 1;
-
-    var hello = function() {
-        counter = counter + 1;
-        if (counter == 2) {
-            console.log('finally!');
-            $('.share_fav-container').toggleClass('visible');
-            $('.slideshow_model-box').addClass('modified');
-            $('.slideshow_signup-box').children().addClass('visible');
-        }
-    }
-
     $(function() {
         setInterval(function() {
                 $('.slideshow_boxes > :first-child').fadeOut("slow")
-                    .next('.slideshow_box').fadeIn("slow", hello)
+                    .next('.slideshow_box').fadeIn("slow")
                     .end().appendTo('.slideshow_boxes');
             },
             3500);
     });
-
 
     //TODO
     //
