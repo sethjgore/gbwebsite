@@ -1,6 +1,10 @@
 .slideshow_container
   position: fixed
 
+.slideshow_date
+  position: absolute
+  bottom: 0
+
 .slideshow_box
   height: 90vh
   width: 100%
@@ -16,10 +20,21 @@
   justify-content: center
   -webkit-justify-content: center
 
+
 .slideshow_logo
   z-index: 100
   width: 15vmin
   position: relative
+  +below(450px)
+    margin-top: 25vmin
+    width: 25vmin
+
+.slideshow_logo-date
+  z-index: 100
+  width: 15vmin
+  position: relative
+  margin-top: 2vmin
+
   +below(450px)
     margin-top: 25vmin
     width: 25vmin
@@ -29,6 +44,7 @@
   height: 10vw
   justify-content: center
   -webkit-justify-content: center
+  padding-top: 2rem
 
 .slideshow_model-box.modified
   +below(625px)
