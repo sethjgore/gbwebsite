@@ -1768,7 +1768,7 @@ input {
   z-index: 100;
   width: 15vmin;
   position: relative;
-  margin-top: 2vmin;
+  margin-top: 1vmin;
 }
 @media only screen and (max-width: 450px) {
   .slideshow_logo-date {
@@ -1886,6 +1886,17 @@ a.slideshow_signup-button:hover {
           justify-content: flex-start;
   -webkit-justify-content: flex-start;
 }
+.background_glossy {
+  background: rgba(255,255,255,0.8);
+}
+.follow_more-box {
+  border-radius: 0.3rem;
+  border: 1px solid rgba(179,179,179,0.37);
+  box-shadow: 0 0.2rem 0.1rem 0.1rem rgba(0,0,0,0.1);
+  max-width: 600px;
+  display: inline-block;
+  padding-bottom: 2rem;
+}
 .follow_box {
   position: absolute;
   top: 0;
@@ -1896,13 +1907,35 @@ a.slideshow_signup-button:hover {
 .follow_youarein {
   position: relative;
   z-index: 89;
-  font-size: 5vmin;
+  font-size: 3vmin;
   text-shadow: 0 0 0.5rem #fff;
+  padding: 2vmin;
 }
 @media only screen and (max-width: 500px) {
   .follow_youarein {
-    font-size: 7vmin;
+    font-size: 5vmin;
   }
+}
+.follow_sm-icon .sm-icon {
+  width: 16vmin;
+  height: 10vmin;
+}
+.flex-justifycenter {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.flex-spacearound {
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+.follow_sm-icon .facebook {
+  background: url("facebook-white.svg") center center no-repeat, #cc0007;
+}
+.follow_sm-icon .twitter {
+  background: url("twitter-white.svg") center center no-repeat, #cc0007;
 }
 .share_boxes {
   height: 90vh;
@@ -2066,6 +2099,14 @@ a.slideshow_signup-button:hover {
     top: 0.5rem;
     right: 0.5rem;
   }
+}
+.fb_iframe_widget {
+  display: block !important;
+  -webkit-transform: scale(1.4) !important;
+          transform: scale(1.4) !important;
+  max-width: 150px;
+  overflow: hidden;
+  margin: 0 auto;
 }
 body {
   font-family: 'ITC Blair W01 Light';

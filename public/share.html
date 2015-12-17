@@ -7,87 +7,121 @@
     <meta name="mobile-web-app-capable" content="yes">
     <title>GripBell</title>
     <link rel="stylesheet" type="text/css" href="app.css">
-    <meta property="og:title" content="Sign up for something different. With Nyle DiMarco." />
-    <meta property="og:image" content="http://www.gripbell.com/teaser_fb.png" />
-    <meta property="og:description" content="Coming 01.02.16 #GripBell #ANTM #NyleDiMarco" />
+    <meta property="og:title" content="Choose your favorite model?" />
+    <meta property="og:image" content="http://www.gripbell.com/teaser_secondweek.jpg" />
+    <meta property="og:description" content="GripBell is coming 01.02.2016. See new pictures of America's Next Top Models, including Nyle DiMarco, the winner. #GripBell #ANTM #NyleDiMarco" />
     <meta property="og:url" content="http://www.gripbell.com" />
 </head>
 
 <body class="frontBodyAnimation">
     <div class="slideshow_container flex-column splash">
         <div class="slideshow_logo-box flex flex-center">
-            <object type="image/svg+xml" data="logo/visual.svg" class="slideshow_logo">
+            <object type="image/svg+xml" data="logo/visual-date.svg" class="slideshow_logo-date">
             </object>
         </div>
         <div class="flex-auto flex flex-center slideshow_boxes">
-            <div class="slideshow_box" style="background: url('poses/nyle2.jpg') no-repeat center bottom, #fff; background-size:contain;">
+            <div data-name="nyle" class="slideshow_box" style="background: url('poses/nyle2.jpg') no-repeat center bottom, #fff; background-size:contain;">
+                <div class="slideshow_model-box modified">
+                    <div class="slideshow_model-name">Nyle DiMarco</div>
+                    <div class="slideshow_model-place">The America's Next Top Model Winner</div>
+                </div>
             </div>
-            <div class="slideshow_box" style="background: url('poses/delaine2.jpg') no-repeat center bottom, #fff; background-size:contain;">
+            <div data-name="mame" class="slideshow_box" style="background: url('poses/mame3.jpg') no-repeat center bottom, #fff; background-size:contain; display: none;">
+                <div class="slideshow_model-box modified">
+                    <div class="slideshow_model-name">Mame Adjei</div>
+                    <div class="slideshow_model-place">ANTM First Runner Up</div>
+                </div>
             </div>
-            <div class="slideshow_box" style="background: url('poses/justin2.jpg') no-repeat center bottom, #fff; background-size:contain;">
+            <div data-name="dustin" class="slideshow_box" style="background: url('poses/dustin2.jpg') no-repeat center bottom, #fff; background-size:contain; display: none;">
+                <div class="slideshow_model-box modified">
+                    <div class="slideshow_model-name">Dustin McNeer</div>
+                    <div class="slideshow_model-place">ANTM Contestant</div>
+                </div>
             </div>
-            <div class="slideshow_box" style="background: url('poses/dustin2.jpg') no-repeat center bottom, #fff; background-size:contain;">
+            <div data-name="justin" class="slideshow_box" style="background: url('poses/justin2.jpg') no-repeat center bottom, #fff; background-size:contain; display: none;">
+                <div class="slideshow_model-box modified visible">
+                    <div class="slideshow_model-name">Justin Kim</div>
+                    <div class="slideshow_model-place">ANTM Contestant</div>
+                </div>
             </div>
-            <div class="slideshow_box" style="background: url('poses/man2.jpg') no-repeat center bottom, #fff; background-size:contain;">
+            <div data-name="stefano" class="slideshow_box" style="background: url('poses/man2.jpg') no-repeat center bottom, #fff; background-size:contain; display: none;">
+                <div class="slideshow_model-box modified">
+                    <div class="slideshow_model-name">Stefano Churchill</div>
+                    <div class="slideshow_model-place">ANTM Contestant</div>
+                </div>
             </div>
-            <div class="slideshow_box" style="background: url('poses/mame3.jpg') no-repeat center bottom, #fff; background-size:contain;">
+            <div data-name="delanie" class="slideshow_box" style="background: url('poses/delaine3.jpg') no-repeat center bottom, #fff; background-size:contain; display: none;">
+                <div class="slideshow_model-box modified">
+                    <div class="slideshow_model-name">Delanie Dischert</div>
+                    <div class="slideshow_model-place">ANTM Contestant</div>
+                </div>
             </div>
-            <!-- <div class="fr_tagline-text">something different</div>
-            <form class="slideshow_box flex flex-column signup_splash-form" name="contact" action="index" method="post">
-                <input type="hidden" name="form-name" value="contact">
-                <input placeholder="Your Name" type="text" name="name">
-                <input placeholder="Your Email" type="email" name="email">
-                <button>Sign Up Now</button>
-            </form> -->
         </div>
     </div>
-
-    <!-- <div class="flex splash flex-column fr_background">
-        <div class="center flex-auto flex flex-center fr_tagline-box">
-            <h1 class="fr_tagline-text flex-auto">something different</h1></div>
-         <div class="flex flex-column signup_splash flex-center" background="assets/campaign/">
-            <div class="center signup_splash-text">sign up for
-                <br>something different</div>
-
-            <form class="flex flex-column signup_splash-form" name="contact" action="index" method="post">
-                <input type="hidden" name="form-name" value="contact">
-                <input placeholder="Your Name" type="text" name="name">
-                <input placeholder="Your Email" type="email" name="email">
-                <button>Sign Up Now</button>
-            </form>
-            <div class="fr_sm-box flex flex-center center">
-                <a href="http://facebook.com/gripbell" class="sm-icon facebook"></a>
-                <a href="http://twitter.com/gripbell" class="sm-icon twitter"></a>
-                <a href="http://instagram.com/gripbell" class="sm-icon instagram"></a>
+    <div class="follow_box splash flex flex-center">
+        <div class="flex-auto center flex-column flex-center">
+            <div class="follow_more-box background_glossy">
+                <div class="follow_youarein"> You're in! <br> But are your friends in?
+                </div>
+                <div class="follow_sm-icon flex-spacearound flex flex-center"><a class=" sm-icon sm-icon-display facebook" target="_blank" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.gripbell.com" alt="share on facebook"></a> <a target="_blank" class="sm-icon-display sm-icon twitter" href="https://twitter.com/intent/tweet?text=I%20just%20got%20in%20.%40gripbell%20%26%C2%A0nobody%20know%20what%20it%20is%20yet%20%23somethingdifferent%20%23gripbell%20gripbell.com" alt="tweet this"></a>
+                </div>
             </div>
         </div>
-    </div> -->
+    </div>
+    <div class="share_fav-box">
+        <div class="share_fav-container visible">
+            <div class="center share_fav-text">follow these models</div>
+            <div class="share_buttons-box flex flex-center flex-wrap">
+                <a target="_blank" href="https://www.facebook.com/NyleDiMarco/">
+                    <div class="share_buttons"><img class="share_button" src="buttons/button-nyle.png"></img>
+                </a>
+                <a target="_blank" href="https://www.instagram.com/mameadjei4"><img class="share_button" src="buttons/button-mame.png"></img>
+                </a>
+                <a target="_blank" href="https://www.facebook.com/dustinmcneerantm/">
+                    <img class="share_button" src="buttons/button-dustin.png"></img>
+                </a>
+                </div>
+                <div class="share_buttons">
+                    <a target="_blank" href="https://www.instagram.com/seoulful_j/"><img class="share_button" src="buttons/button-justin.png"></img>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/stefanochurchill/"><img class="share_button" src="buttons/button-man.png"></img>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/delaniedischert/"><img class="share_button" src="buttons/button-delaine.png"></img>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slideshow_signup-box">
+        <div class="slideshow_sm-box visible flex flex-center center invisible">
+            <a target="_blank" href="http://facebook.com/gripbell" class="sm-icon facebook"></a>
+            <a target="_blank" href="http://twitter.com/gripbell" class="sm-icon twitter"></a>
+            <a target="_blank" href="http://instagram.com/gripbell" class="sm-icon instagram"></a>
+        </div>
+    </div>
     <script type="text/javascript" src="http://fast.fonts.net/jsapi/cc3b848b-7e30-4728-8f02-ea9b75c6cbd1.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script type="text/javascript">
     var $ = jQuery;
-
     $(function() {
-        $('.slideshow_boxes .slideshow_box:gt(0)').hide();
         setInterval(function() {
                 $('.slideshow_boxes > :first-child').fadeOut("slow")
-                    .next('.slideshow_box').fadeIn()
+                    .next('.slideshow_box').fadeIn("slow")
                     .end().appendTo('.slideshow_boxes');
             },
             3500);
     });
 
-
     //TODO
     //
-    //function endSlideshow--> when last photo is reached, emit event
+    //function endSlideshow when last photo is reached, emit event
 
     //listener endSlideshow --> show sign up when lpreached
 
     //listener endSlideshow --> show when signup or lpreached
     //
-
     </script>
+    <script type="text/javascript" src="libraries.js"></script>
     <script>
     (function(i, s, o, g, r, a, m) {
         i['GoogleAnalyticsObject'] = r;
@@ -103,8 +137,6 @@
 
     ga('create', 'UA-70998402-1', 'auto');
     ga('send', 'pageview');
-    </script>
-    <script type="text/javascript">
     </script>
 </body>
 
